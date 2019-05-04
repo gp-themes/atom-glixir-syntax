@@ -1,3 +1,3 @@
-## atom-gmacs
+## atom-glixir
 
-gmacs syntax theme for Atom.
+glixir syntax theme for Atom.
