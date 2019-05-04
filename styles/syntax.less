@@ -1,0 +1,60 @@
+.syntax--comment {
+  color: @syntax-color-comment;
+  font-style: italic;
+
+  // link inside comment
+  .syntax--markup.syntax--link {
+    color: darken(@syntax-color-comment, 10%);
+  }
+}
+.syntax--keyword {
+  color: @syntax-color-keyword;
+}
+
+.syntax--constant {
+  color: @syntax-color-constant;
+}
+
+.syntax--variable {
+  color: @syntax-color-variable;
+}
+
+.syntax--string {
+  color: @syntax-color-string;
+}
+
+.syntax--entity {
+  &.syntax--name.syntax--function {
+    color: @syntax-color-function;
+  }
+}
+
+.syntax--meta {
+  &.syntax--class {
+    color: @syntax-color-class;
+  }
+
+  &.syntax--method-call,
+  &.syntax--method {
+    color: @syntax-color-method;
+  }
+}
+
+.syntax--underline {
+  text-decoration: underline;
+}
+
+.syntax--none {
+  color: #ff00ff; // magenta
+}
+
+.syntax--invalid {
+  &.syntax--deprecated {
+    color: @syntax-deprecated-fg !important;
+    background-color: @syntax-deprecated-bg !important;
+  }
+  &.syntax--illegal {
+    color: @syntax-illegal-fg !important;
+    background-color: @syntax-illegal-bg !important;
+  }
+}
